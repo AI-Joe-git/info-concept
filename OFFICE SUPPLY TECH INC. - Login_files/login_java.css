@@ -1,0 +1,4 @@
+.storesite-links .dropdown-menu { max-height: 300px; overflow: auto; overflow-x: hidden; overflow-y: auto; }
+.storesite-links .dropdown-menu a { white-space: nowrap; }
+#crm-controlpane a { display:inline; padding: 0px; }
+.new-cust-create-account, .guest-checkout-btn { margin-left: 10px; }

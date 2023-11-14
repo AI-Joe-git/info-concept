@@ -1,0 +1,17 @@
+html, body, div, th, td { font-size: 12px; }
+.red { color: #FF0000 !important; }
+
+#header, .decorleft, #footer, .bxsrch, #colright, .attFilter, .tabbar { display: none; }
+
+img.tn_big { border: none; height: 90px; width: 120px; }
+
+/* Comparison Table */
+#product-comparison { overflow: visible; width: auto !important; }
+#product-comparison table.comparison-tbl { background: #fff; border-collapse: collapse !important; border-spacing: 1px; }
+#product-comparison table.comparison-tbl td { background: #fff; border: 1px solid #666666 !important; min-width: 50px; padding: 5px; width: auto !important; }
+#product-comparison table.comparison-tbl td img { border: none !important; }
+#product-comparison table.comparison-tbl td.compareheader { background: #eee !important; }
+
+table.costandard th { background-color: #eceef3 !important; }
+
+.no-print { display: none; }

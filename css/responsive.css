@@ -1,0 +1,50 @@
+/*
+@media screen and (min-width: 992px) {
+
+    .nav-top-bar {
+        display: block;
+    }
+
+    .navbar-default {
+
+        min-height: 90px;
+    }
+
+    .navbar-default .navbar-brand img {
+        max-height: 75px;
+    }
+
+    .service-buttom {
+        max-width: 160px;
+    }
+
+    .our-products {
+        text-align: left;
+    }
+
+    .contact img {
+        display: block;
+        width: 100%;
+    }
+
+    #myCarousel h1 {
+        font-size: 5vw;
+
+    }
+
+    #myCarousel h2 {
+        font-size: 3vw;
+    }
+
+    #myCarousel h3 {
+        font-size: 2vw;
+
+    }
+
+}
+
+
+
+
+
+
