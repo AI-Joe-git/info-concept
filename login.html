@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Office World - Customer Login/Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004a99;
+    }
+    .navbar {
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .table {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4>Office World - Customer Login</h4>
+          </div>
+          <div class="card-body" id="login-form">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Log In</button>
+            </form>
+          </div>
+
+          <div id="dashboard-content" style="display: none;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <a class="navbar-brand" href="#">Office World</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="logout()">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="container my-5">
+              <h1>Welcome to your Dashboard</h1>
+              <hr>
+
+              <h2>Your Offers and Invoices</h2>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Offer #</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>OFF-001</td>
+                      <td>15-07-2024</td>
+                      <td>8640€</td>
+                      <td>
+                        <a href="invoice-001.pdf" class="btn btn-primary btn-sm" target="_blank">View PDF</a>
+                      </td>
+                      <td>
+                        <a href="invoice-001.pdf" class="btn btn-primary btn-sm" target="_blank">Download Software</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>OFF-002</td>
+                      <td>2023-07-01</td>
+                      <td>$49.99</td>
+                      <td>
+                        <a href="invoice-002.pdf" class="btn btn-primary btn-sm" target="_blank">View PDF</a>
+                      </td>
+                    </tr>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Invoice #</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>INV-001</td>
+                            <td>2023-06-15</td>
+                            <td>$99.99</td>
+                            <td>
+                              <a href="invoice-001.pdf" class="btn btn-primary btn-sm" target="_blank">View PDF</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>INV-002</td>
+                            <td>2023-07-01</td>
+                            <td>$49.99</td>
+                            <td>
+                              <a href="invoice-002.pdf" class="btn btn-primary btn-sm" target="_blank">View PDF</a>
+                            </td>
+                          </tr>
+      
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Read registered users from a text file
+    fetch('registered-users.txt')
+      .then(response => response.text())
+      .then(data => {
+        const registeredUsers = data.trim().split('\n').map(line => {
+          const [username, password] = line.split(',');
+          return { username, password };
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+          // Check if the user is registered
+          const isRegistered = registeredUsers.some(user => user.username === username && user.password === password);
+
+          if (isRegistered) {
+            // Store the access token in local storage
+            localStorage.setItem('access_token', 'valid_token');
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('dashboard-content').style.display = 'block';
+          } else {
+            alert('Invalid username or password. Please try again.');
+          }
+        });
+
+        // Check if the user is logged in
+        if (localStorage.getItem('access_token')) {
+          document.getElementById('login-form').style.display = 'none';
+          document.getElementById('dashboard-content').style.display = 'block';
+        }
+      })
+      .catch(error => {
+        console.error('Error reading registered users:', error);
+      });
+
+    function logout() {
+      // Remove the access token from local storage and refresh the page
+      localStorage.removeItem('access_token');
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>

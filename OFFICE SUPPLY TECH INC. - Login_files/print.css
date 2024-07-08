@@ -1,5 +1,0 @@
-#body-main { width: 100% !important; }
-#top-nav, #searchbar-main, #side-left, #side-right, #nav-main, #searchbar-main { display: none !important; }
-html body.storesite #body-main { clear: both; display: block; float: none; padding-top: 0 !important; }
-#company-logo { display: none; }
-#header-main-logo .visible-print img { max-height: 70px; }

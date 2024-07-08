@@ -32,7 +32,7 @@ height: 50px;
 .nav-top-bar ul li i {
     display: inline;
     padding: 15px 8px 0 0;
-    color: #e10515;
+    color: #05a3e1;
 }
 
 .nav-top-bar ul li span {
@@ -51,7 +51,7 @@ height: 50px;
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #e10515;
+    color: #05a3e1;
     text-decoration: none;
     background-color: #000;
 }
@@ -90,8 +90,8 @@ height: 50px;
 
 /* MAIN NAV */
 .navbar-default .navbar-brand img {
-    width: 175px;
-    height: 61px;
+    width: 371,2px;
+    height: 63.9px;
     
 }
 
@@ -113,13 +113,13 @@ height: 50px;
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: rgba(225, 5, 21, 1);
+    color: rgb(5, 174, 225);
     background-color: rgba(248, 248, 248, 0);
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(225, 5, 21, 1);
+    color: rgb(5, 174, 225);
     background-color: rgba(255, 255, 255, 1);
 }
 .navbar-default .navbar-toggle {
@@ -181,7 +181,7 @@ height: 50px;
 
 .headline-ink-toner {
     
-    color: #e10515;
+    color: #05a3e1;
     font-size: 4vw;
     text-align: center;
     font-weight: 700;
@@ -203,7 +203,7 @@ height: 50px;
 
 .headline-printers-copiers {
     
-    color: #e10515;
+    color: #05a3e1;
     font-size: 4vw;
     text-align: center;
     font-weight: 700;
@@ -225,7 +225,7 @@ height: 50px;
 
 .headline-storage-media {
     
-    color: #e10515;
+    color: #05a3e1;
     font-size: 4vw;
     text-align: center;
     font-weight: 700;
@@ -339,7 +339,7 @@ height: 50px;
 }
 
 .welcome-section h2 {
-    color: #e10515;
+    color: #05a3e1;
     font-size: 24px;
     line-height: 36px;
     font-weight: bold;
@@ -359,7 +359,7 @@ height: 50px;
 }
 
 .services i {
-    color: #e10515;
+    color: #05a3e1;
     font-size: 80px;
     padding: 20px 20px 0px 20px;
 }
@@ -466,7 +466,7 @@ display:none;
     z-index: 4;
     top:30%;   
     color: #fff;
-    color: red;
+    color: rgb(0, 217, 255);
     font-size: 30px;     
 }
 
@@ -550,7 +550,7 @@ display:none;
 .step-1 h3 {
 
     font-size: 22px;
-    color: #e10515;
+    color: #05a3e1;
     
 }
 
@@ -562,7 +562,7 @@ display:none;
 
 i.fa-file-pdf-o, i.fa-paper-plane-o, i.fa-print, i.fa-building-o {
     font-size: 50px;
-    color: #e10515;
+    color: #05a3e1;
     float: left;
     padding: 0 0 0 25px;
 
@@ -590,9 +590,9 @@ i.fa-file-pdf-o, i.fa-paper-plane-o, i.fa-print, i.fa-building-o {
 
 
 .download-buttom {
-    border: 1px solid #e10515;
+    border: 1px solid #05a3e1;
     font-weight: 700;
-    color: #e10515;
+    color: #05a3e1;
     border-radius: 2px;
     padding: 10px 24px;
     
@@ -600,8 +600,8 @@ i.fa-file-pdf-o, i.fa-paper-plane-o, i.fa-print, i.fa-building-o {
 
 .download-buttom:hover {
   color: #fff;
-  background-color: #e10515;
-  border: 1px solid #e10515; 
+  background-color: #05a3e1;
+  border: 1px solid #05a3e1; 
   border-radius: 2px;
   padding: 10px 24px;
 }
@@ -663,7 +663,7 @@ hr {
 
 .our-products h2 {
     text-align: center;
-    color: #e10515;
+    color: #05a3e1;
     font-size: 36px;
     line-height: 45px;
     font-weight: 500;
@@ -694,7 +694,7 @@ hr {
 
 .contact-form h2 {
     text-align: left;
-    color: #e10515;
+    color: #05a3e1;
     font-size: 32px;
     line-height: 20px;
     font-weight: 500;
@@ -718,7 +718,7 @@ hr {
 
 h4.company-info  {
     
-     color: #e10515;
+     color: #05a3e1;
      padding: 15px 0 35px 0;
 }
 
@@ -752,7 +752,7 @@ h4.company-info  {
 
 .team h2 {
     text-align: left;
-    color: #e10515;
+    color: #05a3e1;
     font-size: 32px;
     line-height: 20px;
     font-weight: 500;
@@ -779,7 +779,7 @@ h3.team-position {
 }
 
 .fa-envelope-o {
-    color: #e10515;
+    color: #05a3e1;
     padding-left: 10px; 
 }
 
@@ -801,7 +801,7 @@ h3.team-position {
     
     
     text-align: left;
-    color: #e10515;
+    color: #05a3e1;
     font-size: 32px;
     line-height: 20px;
     font-weight: 500;
@@ -831,7 +831,7 @@ h3.team-position {
 }
 
 .contact i {
-    color: #e11505;
+    color: #05b5e1;
     padding: 0px 20px 20px 0px;
 }
 
@@ -845,7 +845,7 @@ h3.team-position {
 } 
 
 .contact-nav a:hover {
-    color: #e10515;
+    color: #05a3e1;
     text-decoration: none;
 } 
 
@@ -873,7 +873,7 @@ footer {
 }
 
 footer p span {
-    color: #e11505;
+    color: #05b5e1;
 }
 
 /*END FOOTER*/
