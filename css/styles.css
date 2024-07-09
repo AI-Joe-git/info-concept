@@ -90,11 +90,37 @@ height: 50px;
 
 /* MAIN NAV */
 .navbar-default .navbar-brand img {
-    width: 371,2px;
+    width: 371.2px;
     height: 63.9px;
-    
 }
 
+@media (max-width: 767px) {
+    .navbar-default .navbar-brand img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default .navbar-brand img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-default .navbar-brand img {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-default .navbar-brand img {
+        width: 371.2px;
+        height: 63.9px;
+    }
+}
 .navbar-default {
     font-size: 16px;
     background-color: rgba(255, 255, 255, 1);
